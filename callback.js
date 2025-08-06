@@ -23,6 +23,21 @@ const executeCallback = (callback) => {
 /* executeCallback(sayHello) */
 
 //callback as anonymous function - also known as inlining
-executeCallback(function () {
+//print hello
+/* executeCallback(function () {
   console.log('Hello')
+}) */
+
+//print goodbye
+/* executeCallback(function () {
+  console.log('Goodbye')
 })
+ */
+
+//convert anonymous functions to arrow functions
+//--shorter syntax-- unknown other benefits
+//print hello
+executeCallback(() => console.log('Hello'))
+
+//print goodbye
+executeCallback(() => console.log('Goodbye'))
